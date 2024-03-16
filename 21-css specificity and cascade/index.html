@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 1. universal selector*/
+        h1 {
+            color: aqua
+        }
+
+        /* 2. Class selectors*/
+        .cpurple {
+            color: purple;
+        }
+
+        /* 2. Class selectors */
+
+        .yellow {
+            color: yellow;
+        }
+
+        /* 2 Class selectors */
+        h1.cred {
+            color: violet;
+        }
+
+        /* 10+1=11 points */
+        [data-x=a] {
+            color: maroon;
+        }
+
+        .fish {
+            color: aquamarine !important;
+        }
+
+        cat {
+            color: antiquewhite;
+        }
+
+        /* 2. attribute */
+        /* position<specificity<origin<important */
+        /* origin:browser masala */
+        /* highest prioroty :important */
+        /* <!--inline > ID-selector>Class or attribute selector> Element-selector>Universal-selector--> */
+
+        a.hishamclass.shireen-class[href]:hover {
+            /* points:a[1]+class[10]+class[10]+pseudo-href[10]+hover[10]
+            total=51 points */
+            color:blue
+        }
+    </style>
+</head>
+
+<body>
+    <h2 class="fish cat">hvnjdfjids</h2>
+    <h1 CLASS="yellow cred cpurple" data-x="a">CSS SPECIFICITY AND CASCADE</h1>
+    <!-- data-x is the elememt selector -->
+
+</body>
+
+</html>
+<!-- 1.universal selector: 0 points
+    2. Element selectors and pseudo-elements: 1 points
+   3.Class selectors,attribute selectors AND pseudo-classes:10 points
+  4.ID selectors:100 points
+ 5.inline styles:1000 points
+6.Important :infinity points-->
+<!-- inside div the elements have independent choices -->
