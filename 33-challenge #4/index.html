@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --color:rgb(0, 255, 85);
+            --seccolor:rgb(62, 62, 141);
+            --def:rgb(200, 117, 131);
+            --dof:rgb(200, 117, 176);
+        }   
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        .content{
+            background-color:aquamarine;
+            
+        }
+        ul{
+            display: flex;
+            border: 5px solid burlywood;
+        }
+        ul li{
+            list-style: none; 
+            padding:34px;
+            margin: 3px;
+        }
+        ul li:first-child{
+          background-color: var(--color);
+        }
+        ul li:nth-child(2){
+          background-color: var(--seccolor);
+        } ul li:nth-child(3){
+          background-color: var(--def);
+        }
+        ul li:nth-child(4){
+          background-color: var(--dof);
+        }
+    </style>
+</head>
+<body>
+    <!-- design a nav bar.create a stylesheet change the variables of global varaiables from local variables
+    multi color nav bar -->
+        <div class="content">
+            <ul>
+                <li width="56">Home</li>
+                <li>Contact</li>
+                <li>Services</li>
+                <li>About</li>
+            </ul>
+        </div>
+   
+</body>
+</html>

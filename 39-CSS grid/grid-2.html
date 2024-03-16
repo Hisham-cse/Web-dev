@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid-2</title>
+    <style>
+        .container{
+            border:2px solid black;
+            display: grid;
+            grid-template-areas:"nav nav nav" 
+                                "side article article"
+                                "footer footer footer";
+        }
+        .items{
+            border:2px solid red;
+            height: 55px;
+        }
+        .items-1{
+            grid-area: nav;
+            background-color: aqua;
+        }
+        .items-2{
+            grid-area: side;
+            background-color:antiquewhite;
+        }
+        .items-3{
+            grid-area: article;
+            background-color:aquamarine;
+        }
+        .items-4{
+           grid-area:footer;
+           background-color:rgb(231, 231, 41);
+        }
+        .items-5{
+            grid-area: nav;
+            background-color: rgb(39, 46, 46);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items items-1">1</div>
+        <div class="items items-2">2</div>
+        <div class="items items-3">3</div>
+        <div class="items items-4">4</div>
+        <div class="items items-5">5</div>
+    </div>
+</body>
+</html>
+<!-- GRID TERMINOLOGY:
+    grid track:space btw the grid lines
+    grid area:two lines from horizontal and vertical
+ -->

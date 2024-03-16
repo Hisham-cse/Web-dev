@@ -1,0 +1,59 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid-1</title>
+    <style>
+        .container{
+            justify-items: center;
+            align-items: center;
+            width:80vw;
+            height: 100vh;
+            border:2px solid black;
+            display: grid;
+            /* grid-template-columns: [first]120px [second]100px [t]; */
+            /* grid-template-rows: 100px 100px 100px; */
+            /* grid-template-columns: repeat(4,minmax(100px,1fr)); */
+            grid-template-columns: repeat(4,80px);
+            /* gap:34px; */
+            row-gap: 10px;
+            column-gap: 44px;
+            justify-content: end;
+            grid-template-rows: repeat(2,80px);
+            align-content:start;
+            place-content: center;
+        }
+        .items{
+            border:2px solid blue;
+            height: 55px;
+            width:55px;
+        }
+        /* .items-4{
+            grid-row:1/2;
+            grid-column:first/t;
+        }
+        .items-1{
+            /* grid-row-start:1;
+            grid-row-end:2;
+            /* you can do both 
+                OR */
+            /* grid-row:1/2; */
+            /* grid-column:1/2; */ 
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items items-1">1</div>
+        <div class="items">2</div>
+        <div class="items">3</div>
+        <div class="items items-4">4</div>
+        <div class="items">5</div>
+    </div>
+</body>
+</html>
+<!-- GRID TERMINOLOGY:
+    grid track:space btw the grid lines
+    grid area:two lines from horizontal and vertical
+ -->
